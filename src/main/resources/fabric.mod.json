@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "id": "interactic",
+  "version": "${version}",
+  "name": "Interactic (UNOFFICIAL Fabric Port)",
+  "description": "Unofficial Minecraft 1.21.1 Fabric port of Interactic by glisco.",
+  "authors": [
+    "glisco",
+    "JustHari01 (unofficial 1.21.1 port)"
+  ],
+  "contact": {
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/interactic",
+    "sources": "https://github.com/JustHari01/Interactic-Fabric-1.21.1-Port",
+    "issues": "https://github.com/JustHari01/Interactic-Fabric-1.21.1-Port/issues"
+  },
+  "license": "MIT",
+  "icon": "assets/interactic/icon.png",
+  "environment": "*",
+  "mixins": [
+    "interactic.mixins.json"
+  ],
+  "entrypoints": {
+    "main": [
+      "interactic.InteracticInit"
+    ],
+    "client": [
+      "interactic.InteracticClientInit"
+    ]
+  },
+  "custom": {
+    "modmenu": {
+      "links": {
+        "modmenu.discord": "https://discord.gg/xrwHKktV2d"
+      }
+    }
+  },
+  "depends": {
+    "fabricloader": ">=0.16.14",
+    "fabric": "*",
+    "minecraft": "1.21.1",
+    "owo": ">=0.11.3"
+  }
+}
